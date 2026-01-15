@@ -1,0 +1,15 @@
+# Rockchip USB flash tool
+[tool]
+name = "rkdeveloptool"
+description = "Command-line tool for flashing Rockchip devices via USB"
+license = "GPL-2.0"
+homepage = "https://github.com/rockchip-linux/rkdeveloptool"
+binary = "rkdeveloptool"
+
+[build]
+type = "cmake"
+host_deps = ["libusb-1.0-dev", "libudev-dev"]
+
+[detect]
+version_cmd = ["rkdeveloptool", "-v"]
+version_regex = "rkdeveloptool ver (\\d+\\.\\d+\\.\\d+)"

@@ -1,0 +1,9 @@
+# Latest from master (no tagged releases)
+[release]
+version = "1.32-304f0737"
+released = "2025-03-07"
+
+[source]
+type = "git"
+url = "https://github.com/rockchip-linux/rkdeveloptool.git"
+commit = "304f0737"
